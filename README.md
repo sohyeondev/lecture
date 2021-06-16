@@ -1,1 +1,1 @@
-# sohyeon
+#lecture
