@@ -18,8 +18,8 @@ def restore(destination_ip, source_ip):
     packet = scapy.ARP(op = 2, pdst = destination_ip, hwdst = destination_mac, psrc = source_ip, hwsrc = source_mac)
     scapy.send(packet, verbose = False)
 
-target_ip = "172.30.1.13" # Enter your target IP
-gateway_ip = "172.30.1.254" # Enter your gateway's IP
+target_ip = "10.10.202.237" # Enter your target IP
+gateway_ip = "10.10.202.254" # Enter your gateway's IP
 
 try:
     sent_packets_count = 0
