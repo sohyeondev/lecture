@@ -7,11 +7,11 @@ server.on('error', (err) => {
 });
 
 server.on('message', (msg, rinfo) => {
-    console.log(`serer got: ${msg} from ${rinfo.address}:${rinfo.port}`);
+    console.log(`server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
 });
 
 server.on('listening', () => {
-    const address = sercer.address();
+    const address = server.address();
     console.log(`server listening ${address.address}:${address.port}`);
 });
 
